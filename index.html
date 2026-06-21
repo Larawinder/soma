@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO BÁSICO (Restaurado ao fechar serviço) -->
+    <title>Soma Safe | Câmeras, Alarmes e Segurança Eletrônica em Curitiba e Região</title>
+    <meta name="description" content="Especialistas em instalação e manutenção de câmeras (CFTV), alarmes, cerca elétrica, interfones e portões em Curitiba e Região Metropolitana.">
+    <meta name="keywords" content="segurança eletrônica curitiba, câmeras de segurança, alarmes residencial, cerca elétrica, manutenção de portão, cftv, soma safe">
+    <link rel="canonical" href="https://somasafe.com.br/">
+    <meta name="robots" content="index, follow">
+
+    <!-- OPEN GRAPH / SOCIAL -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Soma Safe | Segurança Eletrônica em Curitiba">
+    <meta property="og:description" content="Proteção completa para sua residência ou empresa com tecnologia de ponta.">
+    <meta property="og:image" content="https://placehold.co/1200x630/03070F/E0A82E?text=Soma+Safe+Segurança">
+    <meta property="og:url" content="https://somasafe.com.br/">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- SCHEMA.ORG (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Soma Safe",
+      "image": "https://placehold.co/600x400/03070F/E0A82E?text=Soma+Safe+Logo",
+      "description": "Empresa especializada em instalação e manutenção de sistemas de segurança eletrônica em Curitiba e Região Metropolitana.",
+      "url": "https://somasafe.com.br",
+      "telephone": "+5541999999999",
+      "areaServed": ["Curitiba", "São José dos Pinhais", "Pinhais", "Colombo", "Araucária", "Fazenda Rio Grande", "Campo Largo", "Almirante Tamandaré", "Piraquara", "Quatro Barras"]
+    }
+    </script>
+
+    <!-- FAQ SCHEMA (espelha a seção de Dúvidas Frequentes) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Vocês atendem residências e empresas?","acceptedAnswer":{"@type":"Answer","text":"Sim! Temos soluções personalizadas tanto para residências e condomínios quanto para empresas de todos os portes em Curitiba e Região."}},
+        {"@type":"Question","name":"A Soma Safe faz instalação e manutenção?","acceptedAnswer":{"@type":"Answer","text":"Trabalhamos com o ciclo completo: projeto, venda de equipamentos, instalação profissional e manutenção preventiva ou corretiva."}},
+        {"@type":"Question","name":"Quais cidades vocês atendem?","acceptedAnswer":{"@type":"Answer","text":"Atendemos Curitiba e cidades da Região Metropolitana, como São José dos Pinhais, Pinhais, Colombo, Araucária e Almirante Tamandaré."}},
+        {"@type":"Question","name":"Consigo ver as câmeras pelo celular?","acceptedAnswer":{"@type":"Answer","text":"Sim. Configuramos todo o sistema para que você acesse as imagens em tempo real diretamente pelo seu smartphone."}},
+        {"@type":"Question","name":"Como solicito um orçamento?","acceptedAnswer":{"@type":"Answer","text":"Basta clicar em qualquer botão de WhatsApp deste site. Nossa equipe responde rapidamente para entender sua necessidade."}}
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" onclick="this.style.display='none'">
+        <span class="close-lightbox">&times;</span>
+        <img src="" id="lightbox-img" alt="Foto Ampliada">
+    </div>
+
+    <!-- OVERLAY DE SERVIÇO EM TELA CHEIA -->
+    <div id="service-overlay">
+        <div id="service-content-render">
+            <!-- Renderizado via JS -->
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOATING -->
+    <a href="#" class="wa-float wa-link-main" target="_blank" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 448 512" width="30" height="30" fill="#fff"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.5-11.3 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.6-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.6 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <!-- HEADER HOME -->
+    <header>
+        <a href="#inicio" class="logo">
+            <img src="assets/img/logo-soma-safe.png" alt="Soma Safe - Segurança Eletrônica em Curitiba">
+            <span class="logo-name">SOMA <span>SAFE</span></span>
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Diferenciais</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn btn-gold nav-btn wa-link-main">Falar no WhatsApp</a>
+    </header>
+
+    <!-- MAIN SECTIONS -->
+    <section id="inicio">
+        <div class="hero-content">
+            <span class="selo-hero">Sua segurança, nossa prioridade</span>
+            <h1>Proteção completa para sua casa ou empresa</h1>
+            <p>Tecnologia e segurança 24h para você ter tranquilidade sempre em Curitiba e Região.</p>
+            <div style="display:flex; gap:15px; flex-wrap:wrap; margin-top: 15px;">
+                <a href="#" class="btn btn-gold wa-link-main">Orçamento via WhatsApp</a>
+                <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFF BAR -->
+    <div class="diff-bar">
+        <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg><span>Segurança Total</span></div>
+        <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Residencial e Comercial</span></div>
+        <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z"/></svg><span>Alta Tecnologia</span></div>
+        <div class="diff-item"><svg viewBox="0 0 24 24"><path d="M12 1C7.03 1 3 5.03 3 10v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h4c1.66 0 3-1.34 3-3V10c0-4.97-4.03-9-9-9z"/></svg><span>Suporte Rápido</span></div>
+    </div>
+
+    <!-- SERVICES (Cards que abrem Tela Cheia) -->
+    <section id="servicos">
+        <div class="section-header">
+            <h2>Nossos Serviços Especializados</h2>
+            <p>Clique em um serviço para ver detalhes, fotos e benefícios.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" onclick="openService('cameras')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Cameras')">
+                    <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Câmeras (CFTV)</h3>
+                    <p>Monitoramento HD com acesso remoto 24h pelo celular.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('interfones')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Interfones')">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Interfones</h3>
+                    <p>Comunicação segura para residências e condomínios.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('portoes')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Portoes')">
+                    <svg viewBox="0 0 24 24"><path d="M20 9v11h-2v-2H6v2H4V9l8-4 8 4zm-4 5H8v2h8v-2zm0-3H8v2h8v-2z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Automatização de Portões</h3>
+                    <p>Motores rápidos e manutenção especializada.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('controle-de-acesso')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Controle+de+Acesso')">
+                    <svg viewBox="0 0 24 24"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Controle de Acesso</h3>
+                    <p>Biometria, tags e facial para empresas.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('fechaduras')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Fechaduras')">
+                    <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Fechaduras Digitais</h3>
+                    <p>Praticidade e segurança sem o uso de chaves.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('cerca-eletrica')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Cerca+Eletrica')">
+                    <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Cerca Elétrica</h3>
+                    <p>Proteção perimetral com alarme integrado.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('alarmes')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Alarmes')">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S10.5 3.17 10.5 4v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Sistemas de Alarme</h3>
+                    <p>Sensores inteligentes e alerta imediato no celular.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+            <div class="service-card" onclick="openService('cancelas')">
+                <!-- TROQUE a url abaixo pela foto real do serviço -->
+                <div class="card-media" style="background-image:url('https://placehold.co/600x360/0E1B2E/E0A82E?text=Cancelas')">
+                    <svg viewBox="0 0 24 24"><path d="M3 4h2v16H3V4zm3 5h15v3H6V9zm2 1v1h2v-1H8zm3 0v1h2v-1h-2zm3 0v1h2v-1h-2z"/></svg>
+                </div>
+                <div class="card-content">
+                    <h3>Cancelas</h3>
+                    <p>Controle eficiente para condomínios e pátios.</p>
+                    <span class="card-link">Ver Detalhes ➜</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALAÇÃO X MANUTENÇÃO (restaurado) -->
+    <section>
+        <div class="section-header">
+            <h2>Instalação e Manutenção</h2>
+            <p>Do projeto ao suporte: cuidamos do ciclo completo.</p>
+        </div>
+        <div class="dual-cta">
+            <div class="cta-box">
+                <h3>Instalação Profissional</h3>
+                <p>Projetos sob medida para residências, empresas e condomínios.</p>
+                <a href="#" class="btn btn-gold wa-link-service" data-service="Instalação">Quero instalar agora</a>
+            </div>
+            <div class="cta-box" style="border-color: #333;">
+                <h3>Manutenção Ágil</h3>
+                <p>Seu sistema parou? Resolvemos com rapidez e peças originais.</p>
+                <a href="#" class="btn btn-outline wa-link-service" data-service="Manutenção">Preciso de manutenção</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUE ESCOLHER + STATS (restaurado) -->
+    <section id="sobre" style="background: var(--bg-light-gray);">
+        <div class="section-header">
+            <h2>Por que escolher a Soma Safe?</h2>
+            <p>Compromisso com a sua tranquilidade acima de tudo.</p>
+        </div>
+        <div class="why-grid">
+            <div class="service-card" style="cursor:default;">
+                <h3>Equipe Especializada</h3>
+                <p>Técnicos treinados e prontos para qualquer desafio técnico.</p>
+            </div>
+            <div class="service-card" style="cursor:default;">
+                <h3>Melhores Marcas</h3>
+                <p>Trabalhamos apenas com equipamentos homologados e de alta durabilidade.</p>
+            </div>
+            <div class="service-card" style="cursor:default;">
+                <h3>Suporte de Verdade</h3>
+                <p>Não te deixamos na mão após a venda. Suporte humanizado e rápido.</p>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item"><span class="stat-number" data-target="1500">0</span><span class="stat-label">Clientes Satisfeitos</span></div>
+            <div class="stat-item"><span class="stat-number" data-target="24">0</span><span class="stat-label">Atendimento Emergencial</span></div>
+            <div class="stat-item"><span class="stat-number" data-target="10">0</span><span class="stat-label">Anos de Experiência</span></div>
+            <div class="stat-item"><span class="stat-number" data-target="16">0</span><span class="stat-label">Cidades Atendidas</span></div>
+        </div>
+    </section>
+
+    <!-- MARCAS (restaurado) -->
+    <div class="brands-slider">
+        <!-- O cliente substitui os placeholders pelas logos reais -->
+        <div class="brands-track">
+            <img src="https://placehold.co/180x80/EEE/666?text=Intelbras" alt="Intelbras">
+            <img src="https://placehold.co/180x80/EEE/666?text=Hikvision" alt="Hikvision">
+            <img src="https://placehold.co/180x80/EEE/666?text=JFL" alt="JFL">
+            <img src="https://placehold.co/180x80/EEE/666?text=PPA" alt="PPA">
+            <img src="https://placehold.co/180x80/EEE/666?text=Garen" alt="Garen">
+            <img src="https://placehold.co/180x80/EEE/666?text=Control+ID" alt="Control ID">
+            <img src="https://placehold.co/180x80/EEE/666?text=Dahua" alt="Dahua">
+            <img src="https://placehold.co/180x80/EEE/666?text=Rossi" alt="Rossi">
+            <!-- Duplicados para o loop infinito -->
+            <img src="https://placehold.co/180x80/EEE/666?text=Intelbras" alt="Intelbras">
+            <img src="https://placehold.co/180x80/EEE/666?text=Hikvision" alt="Hikvision">
+            <img src="https://placehold.co/180x80/EEE/666?text=JFL" alt="JFL">
+            <img src="https://placehold.co/180x80/EEE/666?text=PPA" alt="PPA">
+        </div>
+    </div>
+
+    <!-- AREAS (restaurado: 16 cidades) -->
+    <section id="areas">
+        <div class="areas-container">
+            <h2>Atendemos Curitiba e Região Metropolitana</h2>
+            <p>Levamos segurança até você com agilidade e pontualidade.</p>
+            <div class="areas-grid">
+                <span class="area-chip">Curitiba</span>
+                <span class="area-chip">São José dos Pinhais</span>
+                <span class="area-chip">Pinhais</span>
+                <span class="area-chip">Colombo</span>
+                <span class="area-chip">Araucária</span>
+                <span class="area-chip">Piraquara</span>
+                <span class="area-chip">Fazenda Rio Grande</span>
+                <span class="area-chip">Almirante Tamandaré</span>
+                <span class="area-chip">Campo Largo</span>
+                <span class="area-chip">Quatro Barras</span>
+                <span class="area-chip">Campina Grande do Sul</span>
+                <span class="area-chip">Campo Magro</span>
+                <span class="area-chip">Itaperuçu</span>
+                <span class="area-chip">Rio Branco do Sul</span>
+                <span class="area-chip">Bocaiúva do Sul</span>
+                <span class="area-chip">Mandirituba</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (restaurado: 5 perguntas) -->
+    <section id="faq">
+        <div class="section-header">
+            <h2>Dúvidas Frequentes</h2>
+            <p>Tudo o que você precisa saber sobre nossos serviços.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">Vocês atendem residências e empresas? <svg viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z"/></svg></div>
+                <div class="faq-answer">Sim! Temos soluções personalizadas tanto para residências e condomínios quanto para empresas de todos os portes em Curitiba e Região.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">A Soma Safe faz instalação e manutenção? <svg viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z"/></svg></div>
+                <div class="faq-answer">Trabalhamos com o ciclo completo: projeto, venda de equipamentos, instalação profissional e manutenção preventiva ou corretiva.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quais cidades vocês atendem? <svg viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z"/></svg></div>
+                <div class="faq-answer">Atendemos toda a capital Curitiba e cidades da Região Metropolitana, como São José dos Pinhais, Pinhais, Colombo, Araucária e Almirante Tamandaré.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Consigo ver as câmeras pelo celular? <svg viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z"/></svg></div>
+                <div class="faq-answer">Com certeza. Configuramos todo o sistema para que você tenha acesso às imagens em tempo real diretamente pelo seu smartphone.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como solicito um orçamento? <svg viewBox="0 0 24 24" width="20"><path d="M7 10l5 5 5-5z"/></svg></div>
+                <div class="faq-answer">Basta clicar em qualquer botão de WhatsApp deste site. Nossa equipe responderá rapidamente para entender sua necessidade.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL (restaurado) -->
+    <section style="background: var(--gradient-gold); color: #000; text-align: center;">
+        <div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Tranquilidade para você. Segurança para o que mais importa.</h2>
+            <p style="font-weight: 500; margin-bottom: 30px;">Fale agora com um especialista e proteja seu patrimônio.</p>
+            <a href="#" class="btn wa-link-main" style="background: var(--bg-deep); color: #fff;">Solicitar Orçamento Grátis</a>
+        </div>
+    </section>
+
+    <!-- FOOTER (restaurado) -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h2>Soma Safe</h2>
+                <p>Segurança que protege, tecnologia que conecta. Sua segurança eletrônica em Curitiba e Região Metropolitana.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Diferenciais</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Nossos Serviços</h4>
+                <ul>
+                    <li><a href="#" onclick="openService('cameras'); return false;">Câmeras (CFTV)</a></li>
+                    <li><a href="#" onclick="openService('alarmes'); return false;">Alarmes Monitorados</a></li>
+                    <li><a href="#" onclick="openService('cerca-eletrica'); return false;">Cerca Elétrica</a></li>
+                    <li><a href="#" onclick="openService('portoes'); return false;">Portões e Interfones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2026 Soma Safe — Todos os direitos reservados. Segurança Eletrônica em Curitiba e Região Metropolitana.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
