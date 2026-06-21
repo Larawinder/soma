@@ -255,6 +255,11 @@
             .footer-grid { grid-template-columns: 1fr; gap: 30px; }
             .section-header h2 { font-size: 2rem; }
             .service-body .dual-inner { grid-template-columns: 1fr !important; }
+
+            header { padding: 12px 4%; }
+            .logo img { height: 36px; }
+            .logo-name { font-size: 0.95rem; }
+            .nav-btn { display: none; }
         }
 
         /* =========================================
