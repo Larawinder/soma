@@ -242,6 +242,22 @@
             item.addEventListener('click', () => item.classList.toggle('active'));
         });
 
+        // MENU HAMBÚRGUER (mobile)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('header nav');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                mainNav.classList.toggle('active');
+            });
+            mainNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                });
+            });
+        }
+
         // WHATSAPP LINKS PADRÃO + LINKS POR SERVIÇO (Instalação/Manutenção)
         const setupLinks = () => {
             const defaultMsg = encodeURIComponent("Olá! Vim pelo site e gostaria de um orçamento de segurança eletrônica.");
